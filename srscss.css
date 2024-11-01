@@ -1,0 +1,10 @@
+/* --- CREATE BY WILLIAM OKANO --- */
+#super-redes-sociais {
+	display: table;
+}
+#super-redes-sociais div {
+	width: 100px;
+	float: left;
+	margin-right: 10px;
+}
+/**/

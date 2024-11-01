@@ -1,0 +1,48 @@
+<div id="wpsrs">
+    <div class="title">
+        <div class="icon32" id="icon-edit-pages" style="margin-top: -10px !important;"></div>
+        <h2>CHW Plugins</h2>
+    </div>
+    <form name="frmAtualiza" method="post" action="%%SITEURL%%/wp-admin/admin.php?page=%%PLUGIN_SLUG%%">
+        <table class="widefat" style="margin-bottom: 20px !important;">
+            <thead>
+                <tr>
+                    <th>Configurações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <table>
+                            <tr><td><label for="chk_twitter">Exibir Twitter</label></td><td><input type="checkbox" checked="%%TWITTER%%" name="chk_twitter" id="chk_twitter"/></td></tr>
+                            <tr><td><label for="user_twitter">Usuário do Twitter</label></td><td><input type="text" value="%%USER_TWITTER%%" name="user_twitter" id="user_twitter"/></td></tr>
+                            <tr><td><label for="chk_facebook">Exibir Facebook</label></td><td><input type="checkbox" checked="%%FACEBOOK%%" name="chk_facebook" id="chk_facebook"/></td></tr>
+                            <tr><td><label for="chk_facebook">Idioma Facebook</label></td><td>
+								<select name="idioma_facebook">%%IDIOMAS_FACE%%</select>
+							</td></tr>
+                            <tr><td><label for="chk_googleplus">Exibir Google Plus</label></td><td><input type="checkbox" checked="%%GOOGLEPLUS%%" name="chk_googleplus" id="chk_googleplus"/></td></tr>
+                            <tr><td><label for="chk_googlebuzz">Exibir Google Buzz</label></td><td><input type="checkbox" checked="%%GOOGLEBUZZ%%" name="chk_googlebuzz" id="chk_googlebuzz"/></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="widefat">
+            <thead>
+                <tr>
+                    <th>Configuração de CSS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <textarea name="srscss" cols="80" rows="10">%%SRSCSS%%</textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <input type="submit" value="Atualizar" class="button" />
+        </p>
+    </form>
+</div>
